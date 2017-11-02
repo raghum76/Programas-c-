@@ -72,11 +72,11 @@ void tirar(int vec[], int tamano)
             cout<<"El jugador 1 cayo en una escalera"<<endl;
             jugador1+=vec[jugador1];
         }
-        else if (vec[jugador1]<0)
+        else if (vec[jugador1]<0)   // que va a pasar cuando se cumpla o no se cumpla esta instrucción?
             cout<<"El jugadro 1 cayo en una Serpiente"<<endl;
             jugador1+= vec[jugador1];
         cout<<"El recorrido del jugador 1:"<<jugador1<<endl;
-
+        
         jugador2=dado();
 
         if (vec[jugador2]>0)
@@ -84,7 +84,7 @@ void tirar(int vec[], int tamano)
             cout<<"El jugador 2 cayo en una escalera"<<endl;
             jugador2+=vec[jugador2];
         }
-        else if (vec[jugador2]<0)
+        else if (vec[jugador2]<0)  //estas haciendo que en el caso de una escalera se sume doble
             cout<<"El jugador 2 cayo en una serpiente"<<endl;
             jugador2+=vec[jugador2];
 
